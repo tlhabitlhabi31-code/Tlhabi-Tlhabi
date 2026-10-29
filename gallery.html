@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Photo Gallery | Discover Lesotho</title>
+
+    
+    <link
+        href="css/bootstrap.min.css"
+        rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    
+    <nav class="navbar navbar-expand-lg navbar-dark site-navbar">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="index.html">
+                Discover Lesotho
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false"
+                aria-label="Open navigation menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active"
+                           href="gallery.html">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    
+    <header class="page-header text-center">
+        <div class="container">
+
+
+            <h1>Photo Gallery</h1>
+
+            <p>
+                Explore the mountains, culture and beautiful
+                landscapes of the Mountain Kingdom.
+            </p>
+
+        </div>
+    </header>
+
+
+    
+    <main>
+        <section class="section-space">
+            <div class="container">
+
+                <div class="text-center mb-5">
+                    <h2>Beautiful Places to Discover</h2>
+
+                    <p>
+                        Select any photograph to view it in a larger window.
+                    </p>
+                </div>
+
+                <div class="row g-4">
+
+                    
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="gallery-item">
+
+                            <img src="images/img6.jpg"
+                                 class="gallery-image"
+                                 alt="Mountain landscape in Lesotho"
+                                 data-title="Lesotho Mountains"
+                                 tabindex="0"
+                                 role="button"
+                                 aria-label="View Lesotho Mountains photograph">
+
+                            <h3>Sani Pass</h3>
+                            
+
+                        </div>
+                    </div>
+
+
+                    
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="gallery-item">
+
+                            <img src="images/img1.jpg"
+                                 class="gallery-image"
+                                 alt="Maletsunyane Falls"
+                                 data-title="Maletsunyane Falls"
+                                 tabindex="0"
+                                 role="button"
+                                 aria-label="View Maletsunyane Falls photograph">
+
+                            <h3>Maletsunyane Falls</h3>
+                            
+
+                        </div>
+                    </div>
+
+
+                    
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="gallery-item">
+
+                            <img src="images/img8.jpg"
+                                 class="gallery-image"
+                                 alt="Thaba Bosiu heritage landscape"
+                                 data-title="Thaba Bosiu"
+                                 tabindex="0"
+                                 role="button"
+                                 aria-label="View Thaba Bosiu photograph">
+
+                            <h3>Thaba Bosiu</h3>
+                            
+
+                        </div>
+                    </div>
+
+
+                    
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="gallery-item">
+
+                            <img src="images/img9.jpg"
+                                 class="gallery-image"
+                                 alt="Mountain scenery around Sani Pass"
+                                 data-title="Sani Pass"
+                                 tabindex="0"
+                                 role="button"
+                                 aria-label="View Sani Pass photograph">
+
+                            <h3>Culture</h3>
+                            
+
+                        </div>
+                    </div>
+
+
+                    
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="gallery-item">
+
+                            <img src="images/img2.jpg"
+                                 class="gallery-image"
+                                 alt="Basotho culture and traditions"
+                                 data-title="Basotho Culture"
+                                 tabindex="0"
+                                 role="button"
+                                 aria-label="View Basotho culture photograph">
+
+                            <h3>Kome Caves</h3>
+                            
+
+                        </div>
+                    </div>
+
+
+                    
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="gallery-item">
+
+                            <img src="images/img7.jpg"
+                                 class="gallery-image"
+                                 alt="Waterfall and surrounding landscape"
+                                 data-title="Natural Attractions"
+                                 tabindex="0"
+                                 role="button"
+                                 aria-label="View natural attractions photograph">
+
+                            <h3>Katse Dam</h3>
+                            
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    
+    <div class="modal fade" id="photoModal"
+         tabindex="-1" aria-labelledby="photoModalTitle"
+         aria-hidden="true">
+
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="photoModalTitle">
+                        Photograph
+                    </h2>
+
+                    <button type="button" class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close image">
+                    </button>
+                </div>
+
+                <div class="modal-body text-center">
+
+                    <img id="largePhoto"
+                         src=""
+                         alt=""
+                         class="img-fluid">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    
+    <footer class="site-footer text-center">
+        <div class="container">
+            <p>Discover Lesotho — Explore the Mountain Kingdom.</p>
+            <p>&copy; 2026 Discover Lesotho. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    
+    <script
+        src="js/bootstrap.bundle.min.js">
+    </script>
+
+    
+    <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,274 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f7f4;
+    color: #292635;
+    line-height: 1.6;
+}
+
+
+.site-navbar {
+    background-color: #1f3465;
+}
+
+.navbar-brand {
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    margin-left: 10px;
+}
+
+.nav-link:hover {
+    color: #7f7be8;
+}
+
+
+.hero {
+    background: linear-gradient(135deg, #19164d, #30287c);
+    color: white;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.hero-text {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+
+.eyebrow {
+    color: #bd8c2d;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+
+.section-space {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+
+.feature-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+.check-list li {
+    margin-bottom: 10px;
+}
+
+
+.btn-brand {
+    background-color: #22176b;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.btn-brand:hover {
+    background-color: #131045;
+    color: white;
+}
+
+
+.destinations-section {
+    background-color: #eaf0eb;
+}
+
+.destination-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.destination-card:hover {
+    transform: translateY(-6px);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+
+.site-footer {
+    background-color: #1f3465;
+    color: white;
+    padding: 30px 10px;
+}
+
+
+@media (max-width: 576px) {
+    .hero {
+        padding: 65px 15px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .feature-image {
+        height: 260px;
+    }
+}
+
+
+
+.page-header {
+    background-color: #eaf0eb;
+    padding: 65px 20px;
+}
+
+.page-header h1 {
+    color: #24176b;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.page-header p:not(.eyebrow) {
+    max-width: 650px;
+    margin: 15px auto 0;
+}
+
+
+
+.activity-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 5px solid #1f176b;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease;
+}
+
+.activity-box:hover {
+    transform: translateY(-5px);
+}
+
+.activity-box h3 {
+    color: #1a176b;
+    margin-bottom: 15px;
+}
+
+
+
+.gallery-item {
+    height: 100%;
+    padding-bottom: 15px;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-image:hover,
+.gallery-image:focus {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    outline: 2px solid #17186b;
+}
+
+.gallery-item h3 {
+    font-size: 21px;
+    color: #24176b;
+    margin-top: 16px;
+}
+
+.gallery-item p {
+    color: #52615a;
+}
+
+
+#largePhoto {
+    max-height: 70vh;
+    object-fit: contain;
+}
+
+
+
+.contact-info {
+    margin-top: 25px;
+    padding: 18px;
+    background-color: #eaf0eb;
+    border-left: 4px solid #1f176b;
+    border-radius: 6px;
+}
+
+.contact-info h3 {
+    color: #24176b;
+    font-size: 20px;
+}
+
+
+.contact-form-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form-card h2 {
+    color: #21176b;
+    margin-bottom: 12px;
+}
+
+
+.contact-form-card .form-control,
+.contact-form-card .form-select {
+    padding: 12px;
+    border-radius: 6px;
+}
+
+.contact-form-card .form-control:focus,
+.contact-form-card .form-select:focus {
+    border-color: #1d176b;
+    box-shadow: 0 0 0 0.2rem rgba(23, 107, 85, 0.15);
+}
+
+
+.form-message {
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 6px;
+    display: none;
+}
+
+.form-message.success {
+    display: block;
+    background-color: #d1e7dd;
+    color: #1a0f51;
+}
+
+.form-message.error {
+    display: block;
+    background-color: #f8d7da;
+    color: #842029;
+}
+
+
+@media (max-width: 576px) {
+    .contact-form-card {
+        padding: 20px;
+    }
+}
