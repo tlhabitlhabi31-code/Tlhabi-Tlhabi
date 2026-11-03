@@ -115,20 +115,32 @@
 </div>
 
 
-                                <div class="mb-3">
-                                    <label for="email"
-                                           class="form-label">
-                                        Email Address *
-                                    </label>
+                                
+<!-- EMAIL ADDRESS -->
+<div class="mb-3">
 
-                                    <input type="email"
-                                           class="form-control"
-                                           id="email"
-                                           name="email"
-                                           placeholder="example@email.com"
-                                           autocomplete="email"
-                                           required>
-                                </div>
+    <label for="email" class="form-label">
+        Email Address *
+    </label>
+
+    <input
+        type="email"
+        class="form-control"
+        id="email"
+        name="email"
+        placeholder="example@gmail.com"
+        maxlength="254"
+        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)+"
+        title="Enter a valid email address, for example example@gmail.com"
+        autocomplete="email"
+        required>
+
+    <small class="text-muted">
+        Please enter a valid email address.
+    </small>
+
+</div>
+
 
                                
 <!-- PHONE NUMBER -->
