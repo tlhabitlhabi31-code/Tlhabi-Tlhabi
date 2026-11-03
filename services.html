@@ -322,6 +322,31 @@ if (phoneInput && countrySelect) {
     // Set the initial country code and phone length.
     updatePhoneRules();
 }
+    
+/* EMAIL ADDRESS VALIDATION */
+
+const emailInput = document.getElementById("email");
+
+if (emailInput) {
+
+    emailInput.addEventListener("input", function () {
+
+        // Remove spaces at the beginning and end.
+        this.value = this.value.trim();
+
+        // Check whether the email is valid.
+        if (this.validity.valid) {
+            this.setCustomValidity("");
+        } else {
+            this.setCustomValidity(
+                "Please enter a valid email address, such as example@gmail.com."
+            );
+        }
+
+    });
+
+}
+
 
 </body>
 </html>
