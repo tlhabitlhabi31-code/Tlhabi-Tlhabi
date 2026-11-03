@@ -224,75 +224,52 @@
         </div>
     </footer>
 
-
-    
-    
-    
-
-
-// Find the name input.
 const nameInput = document.getElementById("fullName");
 
-// Find the country and phone inputs.
 const countrySelect = document.getElementById("countryCode");
 const phoneInput = document.getElementById("phone");
 const phonePrefix = document.getElementById("phonePrefix");
 const phoneHelp = document.getElementById("phoneHelp");
 
-
-// NAME: Remove numbers and other unwanted characters.
 if (nameInput) {
 
     nameInput.addEventListener("input", function () {
 
-        // Allow letters, spaces, apostrophes and hyphens.
         this.value = this.value.replace(/[^\p{L}\p{M}' -]/gu, "");
 
-        // Keep the name within 20 characters.
         this.value = this.value.slice(0, 20);
     });
 }
 
-
-// PHONE: Update the country calling code and digit limit.
 function updatePhoneRules() {
 
     if (!countrySelect || !phoneInput) {
         return;
     }
 
-    // Get the selected country's information.
     const selectedOption =
         countrySelect.options[countrySelect.selectedIndex];
 
     const countryCode = selectedOption.value;
     const digitLength = Number(selectedOption.dataset.length);
 
-    // Display the selected calling code.
     phonePrefix.textContent = countryCode;
 
-    // Set the maximum number of digits.
     phoneInput.maxLength = digitLength;
 
-    // Update the instructions.
     phoneHelp.textContent =
         "Enter exactly " + digitLength +
         " digits, without the country code or leading zero.";
-
-    // Remove any existing number if the country changes.
+    
     phoneInput.value = "";
 
-    // Reset phone validation.
     phoneInput.setCustomValidity("");
 }
 
-
-// Allow digits only in the phone input.
 if (phoneInput && countrySelect) {
 
     phoneInput.addEventListener("input", function () {
 
-        // Remove spaces, letters and symbols.
         this.value = this.value.replace(/\D/g, "");
 
         const selectedOption =
@@ -300,7 +277,6 @@ if (phoneInput && countrySelect) {
 
         const digitLength = Number(selectedOption.dataset.length);
 
-        // Check the required number of digits.
         if (this.value.length !== digitLength) {
             this.setCustomValidity(
                 "Please enter exactly " + digitLength + " digits."
@@ -310,14 +286,11 @@ if (phoneInput && countrySelect) {
         }
     });
 
-    // Change the calling code when another country is selected.
     countrySelect.addEventListener("change", updatePhoneRules);
 
-    // Set the initial country code and phone length.
     updatePhoneRules();
 }
     
-/* EMAIL ADDRESS VALIDATION */
 
 const emailInput = document.getElementById("email");
 
@@ -325,10 +298,8 @@ if (emailInput) {
 
     emailInput.addEventListener("input", function () {
 
-        // Remove spaces at the beginning and end.
         this.value = this.value.trim();
 
-        // Check whether the email is valid.
         if (this.validity.valid) {
             this.setCustomValidity("");
         } else {
