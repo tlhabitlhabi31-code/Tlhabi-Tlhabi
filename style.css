@@ -272,3 +272,122 @@ body {
         padding: 20px;
     }
 }
+
+
+/* =================================
+   PROFESSIONAL CONTACT PAGE DESIGN
+================================= */
+
+/* Contact page background */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7f5;
+    color: #26352f;
+}
+
+/* Contact page heading */
+.page-header {
+    background: linear-gradient(135deg, #e8f0eb, #dce9e1);
+    padding: 75px 20px;
+}
+
+.page-header h1 {
+    color: #173f35;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+/* Contact section spacing */
+.contact-form-card {
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 16px;
+    border: 1px solid #e3e9e5;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+}
+
+/* Form heading */
+.contact-form-card h2 {
+    color: #176b55;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+/* Form labels */
+.contact-form-card .form-label {
+    color: #26352f;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* Text boxes and dropdowns */
+.contact-form-card .form-control,
+.contact-form-card .form-select {
+    min-height: 48px;
+    padding: 12px 15px;
+    border: 1px solid #d5ded8;
+    border-radius: 8px;
+    background-color: #fbfcfb;
+    font-size: 15px;
+}
+
+/* Text area */
+.contact-form-card textarea.form-control {
+    min-height: 130px;
+}
+
+/* Input focus effect */
+.contact-form-card .form-control:focus,
+.contact-form-card .form-select:focus {
+    border-color: #176b55;
+    box-shadow: 0 0 0 3px rgba(23, 107, 85, 0.13);
+    background-color: #ffffff;
+}
+
+/* Email instructions */
+.email-help {
+    display: block;
+    margin-top: 7px;
+    color: #68766e;
+    font-size: 12px;
+}
+
+/* Submit button */
+.contact-form-card .btn-brand {
+    min-height: 46px;
+    padding: 11px 24px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+/* Contact information boxes */
+.contact-info {
+    background-color: #eaf1ec;
+    padding: 22px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #176b55;
+}
+
+/* Responsive design for phones */
+@media (max-width: 576px) {
+
+    .page-header {
+        padding: 50px 15px;
+    }
+
+    .page-header h1 {
+        font-size: 30px;
+    }
+
+    .contact-form-card {
+        padding: 22px 18px;
+        border-radius: 12px;
+    }
+
+    .contact-form-card h2 {
+        font-size: 23px;
+    }
+}
+
